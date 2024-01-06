@@ -1,0 +1,81 @@
+:root{
+
+	--base-color: #FFFFFF;
+	--body-bg: #e0e0e0;
+	
+	/* 2K */
+	--main-color: #3A6EA5;
+	--accent-color: #3A6EA5;
+	--btn-main-shadow: 0px 4px 0px 0px rgb(19, 61, 74);
+	--btn-accent-shadow: 0px 4px 0px 0px rgb(19, 61, 74);
+	--nav-img: linear-gradient(90deg, rgba(8, 36, 104, 1), rgba(160, 200, 240, 0.56));
+	
+}
+
+html{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+@media screen and (min-width: 1900px) {
+	html {
+	   transform-origin: left top;
+	   transform: scale(1.075);
+	   height: calc(100% / 1.075);
+	   width: calc(100% / 1.075);
+	   overflow: hidden;
+	}
+	.box{
+		margin-top: 0px;
+		height: 82vh;
+	}
+}
+
+@media screen and (min-width: 3800px) {
+	html {
+	   transform-origin: left top;
+	   transform: scale(2.0);
+	   height: calc(100% / 2.0);
+	   width: calc(100% / 2.0);
+	   overflow: hidden;
+	}
+}
+
+.bg-main{
+	background-color: var(--main-color);
+}
+
+.bg-accent{
+	background-color: var(--accent-color);
+}
+
+.text-main{
+	color: var(--main-color);
+}
+
+.text-accent{
+	color: var(--accent-color);
+}
+
+button:focus{
+ 	outline: none;
+}
+
+.al-r{
+	margin-left: auto;
+	text-align: right;
+}
+
+.al-l{
+	margin-right: auto;
+	text-align: left;
+}
+
+.al-c{
+	margin: auto;
+	text-align:center;
+}
+
+.hidden{
+	display: none;
+}
