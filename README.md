@@ -1,5 +1,5 @@
 ## WinClassic_React 
-Windowsクラッシック画面風のWEB画面的なやつ  
+Windowsクラッシック画面風WEB的なやつ  
 Reactを触り初めて日が浅い頃に作ったものなので実装が拙い。
 
 ### Usage
