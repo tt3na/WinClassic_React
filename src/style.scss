@@ -1,3 +1,5 @@
+@import "./media.scss";
+
 :root{
 
 	--base-color: #FFFFFF;
@@ -17,7 +19,7 @@ html{
 	overflow-x: hidden;
 }
 
-@media screen and (min-width: 1900px) {
+@include fhd {
 	html {
 	   transform-origin: left top;
 	   transform: scale(1.075);
@@ -31,7 +33,7 @@ html{
 	}
 }
 
-@media screen and (min-width: 3800px) {
+@include _4k {
 	html {
 	   transform-origin: left top;
 	   transform: scale(2.0);

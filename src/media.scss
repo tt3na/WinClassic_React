@@ -1,0 +1,11 @@
+@mixin fhd {
+	@media screen and (min-width: 1900px) {
+		@content;
+	}
+}
+
+@mixin _4k {
+	@media screen and (min-width: 3800px) {
+		@content;
+	}
+}

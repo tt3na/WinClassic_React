@@ -1,5 +1,6 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import 'bulma/css/bulma.css';
+import './style.scss';
 import Win from './Win';
 
 function App() {
@@ -8,7 +9,6 @@ function App() {
 
   return (
       <BrowserRouter>
-      <link href="style.css" rel="stylesheet" />
       <Routes>
 	      <Route path="/" element={
 		      <div>
