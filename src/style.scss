@@ -4,8 +4,6 @@
 
 	--base-color: #FFFFFF;
 	--body-bg: #e0e0e0;
-	
-	/* 2K */
 	--main-color: #3A6EA5;
 	--accent-color: #3A6EA5;
 	--btn-main-shadow: 0px 4px 0px 0px rgb(19, 61, 74);
@@ -15,8 +13,125 @@
 }
 
 html{
+	background-color: #3B6EA5;
 	overflow-y: hidden;
 	overflow-x: hidden;
+}
+
+.container{
+	margin-top: 5vh;
+}
+
+.titleBar{
+	background-image:var(--nav-img);
+	height:36px;
+	padding-left:10px;
+	margin-bottom:0px;
+	border-radius: 0px;
+	display: grid;
+	grid-template-columns: 30px 1fr 25px;  
+}
+
+.titleImg{
+	grid-column: 1/1;
+	vertical-align: middle;
+	margin-top: 7px;
+}
+
+.titleText{
+	grid-column: 2/2;
+	margin-top: 6px;
+}
+
+.clock{
+	display: inline-block;
+	padding: 2px;
+	width: 60px;
+	text-align:center;
+	box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.4); 
+	border-right: 1px #ffffff solid;
+	border-bottom: 1px #ffffff solid;
+	background-color: #dfdfdf;
+	margin-bottom: 5px;
+	margin-right: 3px;
+	vertical-align: bottom;
+}
+
+.desk{
+	color: #ffffff;
+	position: absolute;
+	left: 2%;
+	font-size: 12px;
+	text-align: center;
+}
+
+.deskIco{
+	width: 90px;
+}
+
+.statusbar{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 39px;
+	background-color: #DFDEDC;
+	color: #000000;
+	border-top: 1px #ffffff solid;
+	padding-left: 10px;
+	padding-top:5px;
+}
+
+.batsu {
+	grid-column: 3/3;
+	position: relative;
+	margin-top: 8px;
+	width: 20px;
+	height: 20px;
+	box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4); 
+	border-left: 1px #ffffff solid;
+	border-top: 1px #ffffff solid;
+	background-color: #DFDEDC;
+}
+
+.batsu::before, .batsu::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 15px;
+	background: #000;
+}
+
+.batsu::before {
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.batsu::after {
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.contents{
+	padding: 15px;
+}
+
+@include sp {
+	.container{
+		margin-top: 0px;
+	}
+	.deskIco{
+		margin-top: 3vh;
+		margin-left: 5px;
+	}
+	.titleBar{
+		border-radius: 0px;
+	}
+	.box{
+		width: 100vw !important;
+		height: 100vh !important;
+	}
 }
 
 @include fhd {
@@ -28,8 +143,8 @@ html{
 	   overflow: hidden;
 	}
 	.box{
-		margin-top: 0px;
-		height: 82vh;
+	   margin-top: 0px;
+	   height: 82vh;
 	}
 }
 
@@ -40,6 +155,10 @@ html{
 	   height: calc(100% / 2.0);
 	   width: calc(100% / 2.0);
 	   overflow: hidden;
+	}
+	.box{
+	   margin-top: 0px;
+	   height: 82vh;
 	}
 }
 
